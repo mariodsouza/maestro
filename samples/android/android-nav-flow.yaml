@@ -1,0 +1,31 @@
+appId: org.wikipedia
+---
+- launchApp:
+    stopApp: true
+    clearState: true
+- tapOn:
+    id: "org.wikipedia:id/fragment_onboarding_skip_button"
+- assertVisible:
+    id: "org.wikipedia:id/main_toolbar_wordmark"
+- tapOn:
+    id: "org.wikipedia:id/nav_tab_reading_lists"
+- assertVisible:
+    text: "Saved"
+    index: 0
+- tapOn:
+    id: "org.wikipedia:id/nav_tab_search"
+- assertVisible:
+      text: "Search"
+      index: 0
+- tapOn:
+      id: "org.wikipedia:id/nav_tab_edits"
+- assertVisible:
+      text: "Edits"
+      index: 0
+- tapOn:
+      id: "org.wikipedia:id/nav_more_container"
+- assertVisible:
+      id: "org.wikipedia:id/main_drawer_login_button"
+- assertVisible: "Settings"
+- assertVisible: "Donate"
+- back

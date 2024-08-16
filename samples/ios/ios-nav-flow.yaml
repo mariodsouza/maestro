@@ -1,0 +1,16 @@
+appId: org.wikimedia.wikipedia
+---
+- launchApp:
+    stopApp: true
+    clearState: true
+- tapOn: "Skip"
+- tapOn: "Places"
+- assertVisible: "Places"
+- tapOn: "Saved"
+- assertVisible: "Saved"
+- tapOn: "History"
+- assertVisible: "History"
+- tapOn: "Search"
+- assertVisible: "Search"
+- tapOn: "Explore"
+- assertVisible: "wikipedia"

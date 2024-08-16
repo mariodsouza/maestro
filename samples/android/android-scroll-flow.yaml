@@ -1,0 +1,16 @@
+appId: org.wikipedia
+---
+- launchApp:
+    stopApp: true
+    clearState: true
+- tapOn:
+    id: "org.wikipedia:id/fragment_onboarding_skip_button"
+- scrollUntilVisible:
+    element:
+      id: "org.wikipedia:id/view_card_header_title" # or any other selector
+      text: "On this day"
+    direction: DOWN # DOWN|UP|LEFT|RIGHT (optional, default: DOWN)
+    timeout: 50000 # (optional, default: 20000) ms
+    speed: 40 # 0-100 (optional, default: 40) Scroll speed. Higher values scroll faster.
+    visibilityPercentage: 100 # 0-100 (optional, default: 100) Percentage of element visible in viewport
+    centerElement: false # true|false (optional, default: false)

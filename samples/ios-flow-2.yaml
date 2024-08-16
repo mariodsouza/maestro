@@ -1,0 +1,12 @@
+appId: com.mjd.Coffee
+---
+- launchApp
+- tapOn: "New Coffee"
+- tapOn: "Cancel"
+- tapOn:
+    point: "50%,18%"
+- tapOn:
+    id: "Increment"
+- tapOn:
+    id: "saveCoffeeButton"
+    index: 0

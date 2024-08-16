@@ -1,0 +1,6 @@
+appId: org.wikipedia
+---
+- launchApp
+- tapOn: Search
+- tapOn: Search Wikipedia
+- inputText: Computer

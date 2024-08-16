@@ -1,0 +1,20 @@
+appId: org.wikipedia
+---
+- launchApp:
+    stopApp: true
+    clearState: true
+
+- repeat:
+    while:
+      visible: "Continue"
+    commands:
+      - tapOn: "Continue"
+
+- tapOn: "Get Started"
+
+- assertVisible:
+    id: "org.wikipedia:id/main_toolbar_wordmark"
+
+- takeScreenshot: MainScreen
+
+- stopApp

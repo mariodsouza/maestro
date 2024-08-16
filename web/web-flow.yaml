@@ -1,0 +1,7 @@
+appId: "https://www.wikipedia.org/"
+---
+- launchApp
+- tapOn:
+    id: "searchInput"
+- inputText: "Computer"
+- tapOn: "Search"

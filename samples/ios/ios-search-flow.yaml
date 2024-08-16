@@ -1,0 +1,17 @@
+appId: org.wikimedia.wikipedia
+---
+- launchApp:
+    stopApp: true
+    clearState: true
+- tapOn: "Skip"
+- tapOn: "Search"
+#- tapOn: "Search Wikipedia"
+- inputText: Computer
+- tapOn:
+      text: "Computer"
+      index: 1
+- tapOn: "Back"
+- assertVisible: "Search Wikipedia"
+- tapOn: "Cancel"
+- assertVisible: "wikipedia"
+
